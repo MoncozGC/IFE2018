@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人简历</title>
+    <style type="text/css">
+        body {
+            background-image: url(images/a.jpg);
+            /*设置背景图片*/
+            background-attachment: fixed;
+            /*设置图片是否跟着滚动条走  scroll是不走  固定的*/
+            background-repeat: repeat-x;
+            /*设置图片沿什么轴平铺   y轴*/
+        }
+
+        .background-position1 {
+            /*设置图像的位置*/
+            position: absolute;
+            left: 600px;
+            top: 30px;
+        }
+
+        div {
+            width: 700px;
+
+            /*定宽*/
+            margin: 10px auto;
+        }
+
+        div.line-height {
+            line-height: 200%;
+            /*设置以百分比计的行高：*/
+            text-indent: 25px;
+            /*将段落的第一行缩进 25px */
+            text-decoration: underline;
+            /*line-through;定义穿过文本的一条线*/
+            font-weight: 900;
+            /*定义字体粗细*/
+            font-family: "serif", "sans-serif";
+            /*设置字体*/
+        }
+
+        div.font-style {
+            font-style: oblique;
+            /*浏览器会定义一个倾斜的字体样式  italic 斜体的字体样式*/
+        }
+
+        h1 {
+            text-align: center;
+            /*设置文本对齐方式*/
+            font-size: 32px;
+            text-shadow: 5px 5px 5px #191970;
+            /*基础的文本阴影效果：*/
+        }
+
+        p {
+            color: #00BFFF;
+        }
+
+        .border-style-dotted {
+            border-style: dotted;
+        }
+
+        .border-style-solid {
+            border-style: solid;
+        }
+
+        .border-style-double {
+            border-style: double;
+        }
+
+        .border-style-dashed {
+            border-style: dashed;
+        }
+
+        .border {
+            border: 15px double #00BFFF;
+            /*border也可以这样写顺序是 宽度 样式 颜色  但是少写一个也可以*/
+        }
+
+        ul {
+            list-style: square inside url('/images/c.png');
+            /*设置列表元素的 样式 位置 参差图片*/
+        }
+
+        a:link
+        /*未被访问的链接*/
+
+            {
+            color: darkgreen;
+        }
+
+        a:visited
+        /*已被访问的链接*/
+
+            {
+            color: dimgray;
+        }
+
+        a:hover
+        /*鼠标指针移动到链接上*/
+
+            {
+            color: darkred;
+        }
+
+        a:active
+        /*正在被点击的链接*/
+
+            {
+            color: lightseagreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <img class="background-position1" src="images/b.png" width="32px" height="32px" />
+        <h1>简历</h1>
+        <div class="line-height">
+            <p>姓名:Q</p>
+            <p>电话:151515</p>
+            <p>邮箱:
+                <a href="#">189999754@qq.com</a>
+            </p>
+            <p>学历:本科 百度前端技术学院</p>
+            <p>项目经验:项目A：项目时间：2017.1-2017.8，项目描述：在项目A中负责了xxxxx</p>
+            <p id="font-style">项目B:项目时间：2018.1---，项目描述：在项目A中负责了xxxxx</p>
+        </div>
+        <div>
+            <p class="border-style-dotted">这是定义border-style-dotted点状边框的语句</p>
+            <p class="border-style-solid">这是定义border-style-solid实线边框的语句</p>
+            <p class="border-style-double">这是定义border-style-double双线边框的语句</p>
+            <p class="border-style-dashed">这是定义border-style-dashed虚线边框的语句</p>
+            <p class="border">这是定义border-style-dashed虚线边框的语句</p>
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+                <li>jQuery</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
