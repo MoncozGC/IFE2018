@@ -1,0 +1,69 @@
+.clearfix::after {
+	content: '';/*content 属性与 :before 及 :after 伪元素配合使用，来插入生成内容。也可以不插入东西*/
+	display: block;/*设置为块状*/
+	height: 0;
+	visibility: hidden;/*visibility设置元素不可见*/
+	clear: both;/*设置哪一侧不允许其他浮动元素。 both:左右*/
+}
+
+h3,
+p {
+	margin: 0;
+	font-size: 16px;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+main{
+	width: 960px;
+	overflow: hidden;/*规定当内容溢出元素框时发生的事情。hidden:内容会被修剪，并且其余内容是不可见的。*/
+}
+
+/*基本信息栏*/
+.basis h3,
+.basis p,
+/*联系方式栏*/
+.contract h3,
+.contract p {
+	display: inline;/*设置为内联*/
+}
+
+.basis li,
+.contract li {
+	float: left;/*左浮动*/
+	margin-right: 40px;
+}
+
+.ability li,
+/*能力描述栏*/
+.edu li,
+/*教育经历*/
+.project li
+ /*项目经历*/{
+	margin-bottom: 20px;
+}
+
+.main-title {
+	float: left;
+	width: 20%;
+	padding-bottom: 2000px;
+	margin-bottom: -2000px;
+	background-color: rgb(101, 165, 250);/*背景颜色*/
+}
+.main-body{
+	float: right;
+	width: 80%;
+	padding-left: 25px;
+	box-sizing: border-box;
+}
+
+h1{
+	color: #fff;
+	text-align: center;
+}
