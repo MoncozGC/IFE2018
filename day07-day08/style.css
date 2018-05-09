@@ -1,0 +1,162 @@
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+    /*margin后面如果只有两个参数的话，第一个表示top和bottom，第二个表示left和right
+    因为0 auto，表示上下边界为0，左右则根据宽度自适应相同值（即居中）*/
+}
+
+/*<header>*/
+
+#header{
+    background: #000;
+    color:#fff;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+#header .content .links a{
+    color:#fff;
+    font-size: 12px;
+}
+
+#header .content{
+    position: relative;/*相对定位*/
+}
+
+.logo{
+    position: absolute;/*绝对定位*/
+    top:12px;
+    font-size: 30px;
+}
+
+#header .links{
+    position: absolute;
+    top:3px;
+    right: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*</header>*/
+
+
+/*banner*/
+#banner{
+    background: #66bb33;
+    height: 200px;
+    border-bottom: 1px solid gray;
+}
+
+#banner .wrapper {
+    height: 200px;
+    position: relative;
+}
+
+#banner .nav{
+    display: inline;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    list-style: none;
+}
+
+#banner .nav li{
+    display: inline-block;
+    background: #b2dd99;
+    width: 18px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    vertical-align: bottom;/*属性设置元素的垂直对齐方式。 botton把元素的顶端与行中最低的元素的顶端对齐。*/
+}
+
+#banner .nav li:nth-child(2){
+    border: 2px solid #000;
+    height: 33px;
+    background: #e0f1d6;
+    line-height: 33px;
+}
+
+
+/*</banner*/
+
+/*<nav>*/
+
+#nav{
+    height: 100px;
+    border-bottom:1px solid gainsboro; 
+    box-sizing: border-box;
+}
+
+#nav .content{
+    height: 100px;
+    position: relative;
+}
+
+#nav .tab{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#nav .tab li{
+    width: 80px;
+    height: 40px;
+    border: 1px solid gainsboro;
+    background: #eee;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 20px;
+    font-size: 15px;
+}
+
+#nav .tab li:nth-child(1){
+    background: #fff;
+    border-bottom: 1px solid #fff;
+
+}
+
+/*</nav>*/
+
+/*<content>*/
+#content .row{
+    display: flex;
+}
+
+#content span{
+    /* 横向排列：横向轴 */
+    flex-direction: row;    
+    /* 交叉轴居中 */
+    align-items: center;
+    /* 主轴居中排列 */
+    justify-content: center;
+    flex-grow: 1;
+    width: 0;
+    height: 200px;
+    border: 1px solid #ccc;
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 80px;
+    font-size: 14px;
+    margin: 10px 10px 0 0;
+}
+
+
+/*</content>*/
+
+/*<footer>*/
+#footer{
+    margin-top:10px;
+    height: 100px;
+    background: #666;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top:20px;  
+}
+
+/*</footer>*/
