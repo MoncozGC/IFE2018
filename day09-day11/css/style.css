@@ -1,0 +1,634 @@
+html, body {
+    width: 100%;
+    height: 100%;
+	margin: 0;
+}
+
+.wrapper /*包装器   整个放入到div中*/{
+    width: 100%;
+    height: 100%;
+}
+
+/*header部分*/
+header {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;/*属性设置是否及如何重复背景图像。 no-repeat:背景图像不平铺*/
+    background-size: cover;/* cover:把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。
+    背景图像的某些部分也许无法显示在背景定位区域中。*/
+    overflow: hidden;
+    zoom: 1;
+}
+
+.firstLine /*第一行。给hello world添加样式*/{
+    width: 345px;
+    color: white;
+    font-size: 62px;
+    margin: 100px auto 86px auto;/*居中*/
+
+}
+
+.secondLine/*第二行。 hell...行,下面的语句样式*/ {
+    width: 836px;
+    color: white;
+    font-size: 22px;
+    font-weight: lighter;/*设置文本的粗细。lighter:设置更细的文本*/
+    line-height: 32px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.signUpForm /*报名表。*/{
+    width: 970px;
+    height: 250px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    margin: 106px auto 0 auto;
+}
+
+.accountTips/*账户提示。 整体样式*/ {
+    text-transform: uppercase;/*控制文本的大小写。。定义仅有大写字母。*/
+}
+
+.firstTip/*create....*/ {
+    font-size: 16px;
+    color: white;
+    line-height: 36px;
+}
+
+.secondTip/* it is....*/ {
+    font-size: 12px;
+    font-weight: lighter;
+    color: white;
+
+    margin-bottom: 46px;
+}
+
+.input {
+    width: 290px;
+    height: 48px;
+    padding: 0;
+    border: 1px solid white;
+    margin-right: 30px;
+    color: white;
+
+    background: transparent;
+}
+
+#signUp {
+    width: 125px;
+    height: 50px;
+    font-size: 12px;
+    color: white;
+    background-color: transparent;/*背景色为透明*/
+}
+
+#signUp:hover {
+    color: black;
+    background-color: white;
+}
+
+/*ready部分的css*/
+
+.ready /*ready整体*/{
+    width: 970;
+    height: 709px;
+    background-color: white;
+    font-family: "Times New Roman";
+    margin: 0 auto;
+    text-align: center;
+}
+
+.readyText1 {
+    font-size: 12px;
+    color: #141414;
+    text-transform: uppercase;
+
+    margin-top: 87px;
+}
+
+.readyText2 {
+    width: 657px;
+    font-size: 42px;
+    font-weight: lighter;
+    line-height: 52px;
+
+    margin: 45px auto;
+}
+
+.awesome /*Mobile First整体*/{
+    width: 1080px;
+    margin: 0 auto;
+    margin-top: 94px;
+}
+
+.aUnit:nth-of-type(odd)/*选中aUnit中元素 odd控制 奇数aUnit类  even控制偶数*/ {
+    margin-right: 180px;
+}
+
+.aUnit {
+    width: 420px;
+    float: left;
+    margin-bottom: 80px;
+
+    font-size: 0;
+}
+
+.aImg /*控制所有的图片*/{
+    display: inline-block;
+    vertical-align: top;/*设置元素的垂直对齐方式。top:把元素的顶端与行中最高元素的顶端对齐*/
+}
+
+.aInformation /*控制所有的信息*/{
+    width: 340px;
+    margin-left: 30px;
+    text-align: left;
+    display: inline-block;
+
+}
+
+.aTitle /*控制所有的小标题*/{
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.aText /*控制所有的文本*/{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+/*support*/
+
+.support/*支持。控制整个第三部分*/ {
+    width: 100%;
+    height: 797px;
+    background-image: url("../img/supportBackground.png");
+    background-size: cover;
+    -moz-background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.sMain/*主要的.*/ {
+    position: absolute;
+    top: 184px;
+    left: 316px;
+}
+
+.sTitle/*标题*/ {
+    width: 383px;
+    font-size: 42px;
+    line-height: 52px;
+    color: white;
+}
+
+.sText/*文本*/ {
+    width: 383px;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+
+    margin-top: 48px;
+}
+
+.sButton/*整个按钮*/ {
+    margin-top: 56px;
+}
+
+.sBtn/*小按钮*/ {
+    width: 240px;
+    height: 60px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+}
+
+.sBtn:hover/*当鼠标经过按钮时的反应*/ {
+    background-color: white;
+    color: black;
+}
+
+.sBtn:first-of-type {
+    margin-right: 22px;
+}
+
+/*product*/
+.pTitle/*大标题*/ {
+    text-transform: capitalize;/*capitalize:文本中的每个单词以大写字母开头。*/
+    text-align: center;
+    font-size: 42px;
+    line-height: 52px;
+
+    margin-top: 100px;
+}
+
+.pParagraph/*段落。 控制标题下三个div的样式*/ {
+    display: flex;
+    width: 960px;
+    margin: 89px auto 80px auto;
+
+}
+
+.pSection/*部分。*/ {
+    flex: 0 0 268px;
+    /*width: 268px;*/
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.pTextTitle/*小标题*/ {
+    text-align: center;
+}
+
+/*此处hyphens属性是css3，谷歌不支持该属性，该属性使英文单词换行时会有连字符’-‘*/
+.pText/*文本内容*/ {
+    text-align: center;
+
+    margin-top: 40px;
+
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: lighter;
+}
+
+.product:after/*选择器在被选元素的内容后面插入内容。*/ {
+    display: block;
+    content: ' ';
+    width: 100%;
+    border-bottom: 1px solid gray;
+    margin-bottom: 114px;
+}
+
+
+/*detail   第五部分*/
+.detail/*细节。 控制第五部分*/ {
+    width: 970px;
+    margin: 0 auto 105px auto;
+}
+
+.dPhoto/*照片。 第一个背景图*/ {
+    display: inline-block;
+    width: 570px;
+    height: 350px;
+    margin-right: 75px;
+
+    background: url("../img/detail.png") no-repeat;
+    background-size: cover;
+}
+
+.dInformation:last-child/*选择器匹配属于其父元素的最后一个子元素的每个元素。
+                        控制dInformation最后一个元素*/
+            {
+    margin-top: 80px;
+}
+
+.dText/*控制两个文本*/ {
+    display: inline-block;
+    width: 310px;
+    text-align: left;
+    vertical-align: top;
+
+    padding-top: 50px;
+}
+
+.dTitle/*控制两个小标题*/ {
+    font-size: 20px;
+    line-height: 32px;
+
+}
+
+.dText2/*控制两个小文本*/ {
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 30px;
+}
+
+.dPhoto2/*第二张图片*/ {
+    margin: 0 0 0 75px;
+    background: url("../img/detail2.png") no-repeat;
+}
+
+.line {
+    display: block;
+    content: ' ';
+    width: 100%;
+    border-bottom: 1px solid gray;
+    margin-bottom: 100px;
+}
+/*第六部分*/
+
+
+.crew {
+    width: 970px;
+
+    margin: 0 auto;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 100px;
+}
+
+.crewTitle/*大标题*/ {
+    font-size: 42px;
+    /*line-height: 52px;*/
+}
+
+.crewText/*大标题下的文本*/ {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 100;
+
+    margin-top: 35px;
+    margin-bottom: 65px;
+}
+
+.photo {
+    font-size: 0;
+}
+
+.crewPhoto {
+    width: 470px;
+    height: 340px;
+
+    font-size: 0px;
+    display: inline-block;
+}
+
+.crewPhoto:nth-child(odd) {
+    margin-right: 30px;
+}
+
+.crewPhoto1 /*第一个图*/{
+    background: url("../img/people1.png") no-repeat;
+    background-size: cover;
+}
+
+.crewPhoto2 /*第二个图*/{
+    background: url("../img/people2.png") no-repeat;
+    background-size: cover;
+}
+
+.crewPhoto3 /*第三个图*/{
+    background: url("../img/people3.png") no-repeat;
+    background-size: cover;
+
+    margin-top: 30px;
+}
+
+.crewPhoto4 /*第四个图*/{
+    background: url("../img/people4.png") no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+}
+
+.crewPhoto:hover .user {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.user {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: none;
+    z-index: 2;
+    background: #000000;
+    opacity: 0.6;/*设置元素的不透明级别
+    从 0.0 （完全透明）到 1.0（完全不透明）。*/
+    vertical-align: bottom;/*把元素的顶端与行中最低的元素的顶端对齐。*/
+}
+
+.userName {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 110px;
+}
+
+.userDetail {
+    font-size: 12px;
+
+    margin-top: 21px;
+    text-transform: uppercase;
+}
+
+div.socialBtn {
+    display: inline-block;
+    margin-top: 39px;
+}
+
+.facebook {
+    width: 51px;
+    height: 54px;
+
+    opacity: 0.6;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-right: 30px;
+
+    background: url("../img/facebook.png") no-repeat;
+    background-size: auto;/*背景图像尺寸*/
+    background-position: center center;/*设置背景图像的起始位置
+    如果您仅规定了一个关键词，那么第二个值将是"center"。*/
+    background-origin: content-box;/*相对于内容框来定位背景图像：*/
+
+}
+
+.twitter {
+    width: 51px;
+    height: 54px;
+
+    opacity: 0.6;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 50%;/*添加圆角边框*/
+    margin-right: 30px;
+
+    background: url("../img/twitter.png") no-repeat;
+    /* background-size: auto; */
+    background-position: center center;
+    background-origin: content-box;
+}
+
+.instagram {
+    width: 51px;
+    height: 54px;
+
+    opacity: 0.6;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-right: 30px;
+
+    background: url("../img/instagram.png") no-repeat;
+    background-size: auto;
+    background-position: center center;
+    background-origin: content-box;
+}
+
+
+
+/*sendForm 第七部分*/
+.contact /*整个第七部分*/{
+    width: 976px;
+
+    margin: 70px auto 0 auto;
+
+}
+
+#sendForm/*控制表单*/ {
+    display: inline-block;
+    width: 470px;
+    border: 1px solid gray;
+    margin-right: 130px;
+    text-align: center;
+}
+
+.fTitle /*表单标题*/{
+    font-size: 16px;
+
+    margin: 50px 0 50px 0;
+}
+
+.formText /*表单中的文本*/{
+    width: 370px;
+    height: 50px;
+    border: 1px solid gray;
+
+    background: transparent;
+    margin-bottom: 30px;
+}
+
+textarea/*属性是：多行的文本输入控件*/ {
+    width: 370px;
+    height: 140px;
+}
+
+#formButton/*按钮*/ {
+    display: block;
+    width: 377px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    margin: 30px auto 65px auto;
+
+    background-color: black;
+    color: white;
+}
+
+#formButton:hover/*鼠标进过按钮*/ {
+    cursor: pointer;
+}
+
+.contacts /*控制右边部分*/{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ctTitle /*标题*/{
+    font-size: 42px;
+    line-height: 42px;
+    color: #000;
+    margin-top: 88px;
+    margin-bottom: 40px;
+}
+
+.ctText/*所有文本*/ {
+    width: 369px;/*撑上去的*/
+    height: 100px;
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Times New Roman";
+    font-weight: lighter;
+}
+
+.ctLocation /*控制 地址*/{
+    font-size: 16px;
+    line-height: 26px;
+    vertical-align: middle;/*设置元素的垂直对齐方式。
+    middle:把此元素放置在父元素的中部。*/
+}
+
+.ctLocation div {
+    display: inline-block;
+    vertical-align: top;
+    font-family: Montserrat;
+}
+
+.contacts img {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.contacts > div {
+    margin-bottom: 40px;
+}
+
+/*footer样式*/
+footer {
+    display: flex;
+    height: 410px;
+    background-color: black;
+    padding: 88px 226px 0 211px;
+    bottom: 0;
+
+}
+
+.f {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+}
+
+.f > ul > :first-child/*:first-child:用于选取属于其父元素的首个子元素的指定选择器。
+            对于ul要控制它的第一个元素(首个元素)就要加一个 > (大于号)*/ 
+{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.f > ul > li {
+    text-align: left;
+    list-style-type: none;
+}
+
+.f > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 46px;
+
+}
+
+.f > ul > li > a:first-letter {
+    text-transform: uppercase;
+}
+
+.icon {
+    display: flex;
+    padding-left: 0;
+}
+
+.icon > li {
+    flex: 1;
+    list-style-type: none;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#f_4 > ul > li:nth-child(2) {
+    font-size: 18px;
+    line-height: 28px;
+}
