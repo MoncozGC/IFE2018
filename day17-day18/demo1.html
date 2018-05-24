@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>demo17-18</title>
+</head>
+<body>
+          <!-- 加减乘除 -->
+        <input id="first-number" type="number" value=" " placeholder="第一个数字">
+        <input id="second-number" type="number" value="" placeholder="第二个数字">
+        <button id="add-btn" onclick="jia()">加</button>
+        <button id="minus-btn">减</button>
+        <button id="times-btn">乘</button>
+        <button id="divide-btn">除</button>
+        <p id="result">运算结果</p>
+        <script>
+
+                document.getElementById("add-btn").onclick=function(){
+              document.getElementById("result").innerHTML = Number(document.getElementById("first-number").value) + Number(document.getElementById("second-number").value);
+              }
+    
+              document.getElementById("minus-btn").onclick=function(){
+                  document.getElementById("result").innerHTML = 
+                   Number(document.getElementById("first-number").value) - Number(document.getElementById("second-number").value);
+              }
+              document.getElementById("times-btn").onclick=function(){
+                  document.getElementById("result").innerHTML = 
+                   Number(document.getElementById("first-number").value) * Number(document.getElementById("second-number").value);
+              }
+              document.getElementById("divide-btn").onclick=function(){
+                  document.getElementById("result").innerHTML = 
+                   Number(document.getElementById("first-number").value) / Number(document.getElementById("second-number").value);
+              }
+            
+         </script>
+         <!-- 进制转换 -->
+    <input  type="number" onkeyup="dec2bin(this)" size="20" maxlength="20" />
+    <p>转换成二进制的结果为:</p>
+    <div id="B"></div>
+
+    <script>
+        function dec2bin(th){
+            var dec = th.value;
+                bin = "";
+                while(dec > 0){ 
+                    if(dec % 2!=0){ bin = "1" + bin; }
+                    else{ bin = "0" + bin;}
+                dec = parseInt(dec / 2);
+                
+                 }
+                 document.getElementById('B').innerHTML = bin;
+        }
+    </script>
+    <!-- 九九乘法表 -->
+    <div>
+        <button id="table-btn">九九乘法表</button>
+    </div>
+
+
+    <script>
+        var i,j;
+        for(i=1;i<=9;i++){
+            for(j=1;j<=i;j++){
+                document.write(j+"*"+i+"="+i*j+" ");
+            }
+            document.write("<br>");
+        }
+        document.write("<hr>");
+    
+    </script>
+
+            <h1 id="showContent">Hello World!</h1>
+            <input id="content" name="content"/>
+            <button onClick="show()">把内容加载在页面上</button>
+    <script>
+            function show(){
+              var show = document.getElementById("showContent");//显示文本的对象
+                        var content = document.getElementById("content");//输入文字的对象
+                         
+                        show.innerHTML += content.value;//把两个相连接
+                    }
+                    </script>
+</body>
+</html>

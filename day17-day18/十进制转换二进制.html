@@ -1,0 +1,28 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+</head>
+
+<body >
+    <input name="" type="number" onkeyup="dec2bin(this)" value="" size="20" maxlength="20" />
+    <div>转换成二进制后的结果是：</div>
+    <div id="show"></div>
+
+    <script>
+            function dec2bin(th) {
+                dec = th.value;
+                bin = "";
+                while (dec > 0) {
+                    if (dec % 2 != 0) { bin = "1" + bin; }
+                    else { bin = "0" + bin; }
+                    dec = parseInt(dec / 2); //dec转换成int型 除以 2
+                }
+                document.getElementById('show').innerHTML = bin;//bin值赋值给 show
+            }
+        </script>
+</body>
+
+</html>

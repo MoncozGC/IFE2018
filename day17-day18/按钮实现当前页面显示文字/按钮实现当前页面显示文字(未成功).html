@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+    <div>
+        <button id="table-btn">九九乘法表</button>
+        <p id="result4" >s</p><!--//代表表格边框与单元格补白的距离,也是单元格补白之间的距离 -->
+            <script>
+                var tableBox = document.querySelector('#result4');
+                document.querySelector('#table-btn').addEventListener('click', function() {
+                var a = '';
+                for (var i = 1; i <= 9; i++) {
+                     a += '<br>';
+                      for (var j = 1; j <= i; j ++) {
+                        a +=  i + ' * ' + j + ' = ' + i * j +"<br>";
+                      }
+                    //   a += '</tr>'
+                    }
+                    tableBox.innerHTML = a;
+                  });
+                </script>
+</body>
+</html>
