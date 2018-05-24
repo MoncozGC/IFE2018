@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">    
+
+    <title>eg2</title>
+
+</head>
+
+<body>        
+
+    <div id="wrapper">
+
+        <div id="news-top" class="section">
+
+            <h3>Some title</h3>
+
+            <div class="content">
+
+                <ul>
+
+                    <li><span>HTML</span><a href="">Some Link1</a></li>
+
+                    <li><span>JS</span><a class="active" href="">Some Link2</a></li>
+
+                    <li><span>CSS</span><a href="">Some Link3</a></li>
+
+                    <li><span>JS</span><a href="">Some Link4</a></li>
+
+                </ul>
+
+            </div>
+
+            <img src="">
+
+            <p class="">Some Text</p>
+
+        </div>
+
+        <div id="news-normal" class="section">
+
+            <h3>Some title</h3>
+
+            <div class="content">
+
+                <ul>
+
+                    <li><span>HTML</span><a href="">Some Link1</a></li>
+
+                    <li><span>HTML</span><a href="">Some Link2</a></li>
+
+                    <li><span>JS</span><a class="active" href="#">Some Link3</a></li>
+
+                    <li><span>CSS</span><a href="">Some Link4</a></li>
+
+                </ul>
+
+            </div>
+
+            <img src="">
+
+            <p class="">Some Text</p>
+
+            <button id="test-btn">测试获取li元素</button>
+
+            <button id="GetHTMLSpan-btn">获取内容为HTML的span标签</button> 
+
+            <button id="getActiveLink-btn">获取内容为HTML的span标签</button> 
+
+            <button id="findListItem-btn">获取span内容为spanCont的LI标签</button> 
+
+        </div>
+
+    </div>
+
+    <script>
+
+    var  ChildSpans =document.getElementById("news-normal");
+
+    var newstop=document.getElementById("news-top");
+
+    function getAllListItem() {
+
+        // 返回页面中所有li标签
+
+       var  AllLi= document.getElementsByTagName("li")
+
+      
+
+       console.log(AllLi);
+
+    }
+
+
+
+    function findAllHtmlSpanInOneSection(sectionId) {
+
+        // 返回某个section下所有span中内容为HTML的span标签
+
+        var  ChildSpans =sectionId.getElementsByTagName("span")[0]
+
+        console.log(ChildSpans);
+
+    }
+
+
+
+    function findListItem(sectionId, spanCont) {
+
+        // 返回某个section下，所有所包含span内容为spanCont的LI标签
+
+         var  ChildLis =sectionId.getElementsByTagName("span")
+
+         for (var i = 0; i < ChildLis.length; i++) {
+
+             if (ChildLis[i].innerHTML==spanCont){
+
+                console.log(ChildLis[i]);
+
+             }
+
+         };
+
+    }
+
+
+
+    function getActiveLinkContent(sectionId) {
+
+        // 返回某个section下，class为active的链接中包含的文字内容
+
+       console.log(sectionId.querySelector(".active")) ;
+
+    }
+
+    document.getElementById("test-btn").addEventListener("click",getAllListItem);
+
+    document.getElementById("GetHTMLSpan-btn").addEventListener("click",function  () {
+
+        findAllHtmlSpanInOneSection(ChildSpans);
+
+    });
+
+     document.getElementById("getActiveLink-btn").addEventListener("click",function  () {
+
+        getActiveLinkContent(newstop);
+
+    });
+
+     document.getElementById("findListItem-btn").addEventListener("click",function  () {
+
+        findListItem(ChildSpans,"HTML");
+
+    });
+
+    </script>
+
+</body>
+
+</html>
